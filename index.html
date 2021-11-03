@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Creador de bingo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bingo.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    
+  <form> 
+      <input class="button" id="clickMe" type="button" value="Generar">
+      <input type="number" name="cantidad">    
+ </form>
+    
+    
+<div id="Create">
+  <div class="bcenter">
+      <input class="button" type="button" value="Crear nuevo cartón" id="clickMe"  onclick=recharge()>
+    </div>
+    <div class="container">
+            <p id="n1"></p><p class="c"></p><p id="n5"></p><p class="c"></p><p id="n8"></p><p id="n10"></p><p class="c"></p><p class="c"></p><p id="n15"></p>
+            <p id="n2"></p><p id="n3"></p><p class="c"></p><p id="n7"></p><p class="c"></p><p id="n11"></p><p class="c"></p><p id="n13"></p><p class="c"></p>
+            <p class="c"></p><p id="n4"></p><p id="n6"></p><p class="c"></p><p id="n9"></p><p class="c"></p><p id="n12"></p><p id="n14"></p><p class="c"></p>
+        
+    </div>
+
+</div> 
+
+
+<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+      <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+      </filter>
+  </defs>
+</svg>
+
+
+
+
+
+   
+<!-- particules -->
+<script type="text/javascript" src="Bingo.js"></script>
+<!-- particules -->
+
+</body>
+
+</html>

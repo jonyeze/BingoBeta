@@ -1,7 +1,7 @@
 
 //funcion que recarga los numeros en el carton de bingo
 
-function recharge(){
+recharge = () =>{
   let array = [];
 
   array.push(Math.floor(Math.random() * (5 - 1 + 1) + 1));
@@ -18,7 +18,7 @@ function recharge(){
   array.push(Math.floor(Math.random() * (75-70+1)+70));
   array.push(Math.floor(Math.random() * (79-76+1)+76));
   array.push(Math.floor(Math.random() * (84-80+1)+80));
-  array.push(Math.floor(Math.random() * (91-85+1)+85));
+  array.push(Math.floor(Math.random() * (90-85+1)+85));
 
  
   
@@ -34,11 +34,7 @@ recharge();
 
 //funcion que genera nuevos cartones
 
-function addtable(){
-    let amount = prompt();
-    for ( amount = 0; amount > 0; i++) {
-        recharge();
-      
-    };
-    
-}
+
+const add = document.createElement('add');
+console.log(add);
+
